@@ -20,6 +20,17 @@ class Linkedlist: # head None
      while n != None:
      print(n.data)
      n = n.ref
+     
+   # adding element at beginning
+  
+  def add_begin(self,data):
+    new_node = Node(data)
+    new_node.ref = self.head
+    self.head = new_node
+  
 l1 = Linkedlist()
+add_begin(10)
+add_begin(20)
+add_begin(30)
 l1.print()
   
