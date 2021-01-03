@@ -15,7 +15,7 @@ class Linkedlist: # head None
   def print(self):
     if self.head is None:
       print('the linked list is empty')
-     else:
+    else:
      n = self.head
      while n != None:
      print(n.data)
@@ -29,8 +29,8 @@ class Linkedlist: # head None
     self.head = new_node
   
 l1 = Linkedlist()
-add_begin(10)
-add_begin(20)
-add_begin(30)
+l1.add_begin(10)
+l1.add_begin(20)
+l1.add_begin(30)
 l1.print()
   
