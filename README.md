@@ -6,3 +6,7 @@ class Node: # creating a indivudal nodes
   self.data = data
   self.ref = None
   
+class Linkedlist:
+  def __init__(self):
+  self.head = None
+  
