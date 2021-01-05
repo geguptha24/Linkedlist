@@ -40,11 +40,26 @@ class Linkedlist:  # head None
             while n.next is None:
                 n = n.next
             n.next = new
+# adding element after the given node
+
+     def add_after(self,data,pri):
+        n = self.head
+        while n is not None:
+            if pri == n.data:
+                break
+            n = n.ref
+        if n is None:
+            print('the element is not present in linkedlist')
+        else:
+            new = Node(data)
+            new.ref = n.ref
+            n.ref = new
 
 
 l1 = Linkedlist()
 l1.add_end(50)
 l1.add_begin(10)
 l1.add_begin(20)
+l1.add_after(88,20)
 l1.add_begin(30)
 l1.print()
